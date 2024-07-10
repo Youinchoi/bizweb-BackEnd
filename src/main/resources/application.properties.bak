@@ -1,0 +1,25 @@
+spring.application.name=bizweb
+
+# Application Port
+server.port=18080
+
+# MySQL Connection
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://192.168.1.90:13306/bizweb?serverTimezone=UTC
+spring.datasource.username=bizweb
+spring.datasource.password=bizweb
+
+# h2 db 셋팅
+#spring.datasource.url=jdbc:h2:mem:testdb
+#spring.datasource.driverClassName=org.h2.Driver
+#spring.datasource.username=sa
+#spring.datasource.password=
+
+# DDL(create, alter, drop) 테이블 자동생성을 위하여 사용.
+spring.jpa.hibernate.ddl-auto=update
+
+# 모든 쿼리문 보기
+spring.jpa.properties.hibernate.show-sql=true
+
+# 쿼리문 정렬 
+spring.jpa.properties.hibernate.format_sql=true

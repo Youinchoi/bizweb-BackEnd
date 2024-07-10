@@ -1,0 +1,48 @@
+# default
+spring:
+  profiles:
+    active: local
+    
+---
+# 운영
+#spring:
+#  profiles:
+#    active: prod
+    
+---
+# 개발
+#spring:
+#  profiles:
+#    active: dev
+    
+---
+# 로컬
+#spring:q
+#  profiles:
+#    active: local
+
+---
+response:
+  success: "성공적으로 처리되었습니다...."
+  failure: "처리 중 오류가 발생했습니다...."
+
+error:
+  unauthorized : 401
+  forbidden : 403
+  not-found-code: 404
+  server-error-code: 500
+  not-found-message: "Resource not found!!"
+  server-error-message: "Internal server error..."
+  
+user:
+  registerSuccess: "회원가입 완료!"
+  registerFailure: "신규 유저 등록 실패"
+  loginSuccess: "로그인 성공"
+  loginFailure: "로그인 실패"
+  updateSuccess: "변경사항 업데이트 완료"
+  updateFailure: "변경사항 업데이트 실패"
+  deleteSuccess: "회원 삭제 성공"
+  deleteFailure: "회원 삭제 실패"
+  withdrawalSuccess: "회원 탈퇴 성공"
+  withdrawalFailure: "회원 탈퇴 실패"
+  

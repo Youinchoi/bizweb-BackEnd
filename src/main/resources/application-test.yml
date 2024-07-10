@@ -1,0 +1,35 @@
+server:
+  port: 18080
+  servlet:
+    jsp:
+      init-parameters.development: true		# 재실행 없이 jsp 수정
+
+spring:
+ mvc:
+  application:
+    name: bizweb
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/local
+    username: sa
+    password: 
+  view:
+    prefix: /WEB-INF/views/
+    suffix: .jsp
+  jpa: 
+    hibernate:
+      ddl-auto: create  # DDL(create, alter, drop) 테이블 자동생성을 위하여 사용.
+    properties:
+      hibernate:
+        show-sql: true  # 모든 쿼리문 보기
+        format_sql: true  # 쿼리문 정렬
+        dialect: org.hibernate.dialect.H2Dialect
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace

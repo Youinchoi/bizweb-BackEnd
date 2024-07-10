@@ -1,0 +1,107 @@
+{"properties": [
+  {
+    "name": "error.not-found-code",
+    "type": "java.lang.String",
+    "description": "A description for 'error.not-found-code'"
+  },
+  {
+    "name": "error.server-error-code",
+    "type": "java.lang.String",
+    "description": "A description for 'error.server-error-code'"
+  },
+  {
+    "name": "error.not-found-message",
+    "type": "java.lang.String",
+    "description": "A description for 'error.not-found-message'"
+  },
+  {
+    "name": "error.server-error-message",
+    "type": "java.lang.String",
+    "description": "A description for 'error.server-error-message'"
+  },
+  {
+    "name": "response.success",
+    "type": "java.lang.String",
+    "description": "A description for 'response.success'"
+  },
+  {
+    "name": "response.failure",
+    "type": "java.lang.String",
+    "description": "A description for 'response.failure'"
+  },
+  {
+    "name": "user.register-success",
+    "type": "java.lang.String",
+    "description": "A description for 'user.register-success'"
+  },
+  {
+    "name": "user.registerFailure",
+    "type": "java.lang.String",
+    "description": "A description for 'user.registerFailure'"
+  },
+  {
+    "name": "user.loginSuccess",
+    "type": "java.lang.String",
+    "description": "A description for 'user.loginSuccess'"
+  },
+  {
+    "name": "user.loginFailure",
+    "type": "java.lang.String",
+    "description": "A description for 'user.loginFailure'"
+  },
+  {
+    "name": "user.updateSuccess",
+    "type": "java.lang.String",
+    "description": "A description for 'user.updateSuccess'"
+  },
+  {
+    "name": "user.updateFailure",
+    "type": "java.lang.String",
+    "description": "A description for 'user.updateFailure'"
+  },
+  {
+    "name": "user.deleteSuccess",
+    "type": "java.lang.String",
+    "description": "A description for 'user.deleteSuccess'"
+  },
+  {
+    "name": "user.deleteFailure",
+    "type": "java.lang.String",
+    "description": "A description for 'user.deleteFailure'"
+  },
+  {
+    "name": "user.withdrawalSuccess",
+    "type": "java.lang.String",
+    "description": "A description for 'user.withdrawalSuccess'"
+  },
+  {
+    "name": "user.withdrawalFailure",
+    "type": "java.lang.String",
+    "description": "A description for 'user.withdrawalFailure'"
+  },
+  {
+    "name": "error.unauthorized",
+    "type": "java.lang.String",
+    "description": "A description for 'error.unauthorized'"
+  },
+  {
+    "name": "error.forbidden",
+    "type": "java.lang.String",
+    "description": "A description for 'error.forbidden'"
+  },
+  {
+    "name": "spring.datasource.encoding.charset",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.encoding.charset'"
+  },
+  {
+    "name": "spring.datasource.encoding.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.encoding.enabled'"
+  },
+  {
+    "name": "spring.datasource.encoding.force",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.encoding.force'"
+  }
+]}

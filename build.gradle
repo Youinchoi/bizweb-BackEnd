@@ -1,0 +1,66 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.0'
+	id 'io.spring.dependency-management' version '1.1.5'
+}
+
+group = 'com.bizweb'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+compileJava {
+    options.compilerArgs += ["-parameters"] // 컴파일러 플래그 설정
+}
+
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	
+<<<<<<< HEAD
+=======
+	// JSP 연계
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    implementation 'jakarta.servlet:jakarta.servlet-api'
+    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api'
+    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'ch.qos.logback:logback-access:1.4.14'
+	
+>>>>>>> 79474adb8aadc9a76924085381d361127b01fe49
+	// swagger (/swagger-ui/index.html)
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+	
+	// MySql jdbc
+	implementation 'com.mysql:mysql-connector-j:8.4.0'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	
+	// 개발용 DB
+	runtimeOnly 'com.h2database:h2'
+	
+	// JPA (Database 연동)
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

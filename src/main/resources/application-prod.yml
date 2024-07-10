@@ -1,0 +1,24 @@
+server:
+  port: 38080
+
+spring:
+  application:
+    name: bizweb
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.90:13306/bizweb?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: bizweb
+    password: bizweb
+  
+  jpa: 
+    hibernate:
+      ddl-auto: update  # DDL(create, alter, drop) 테이블 자동생성을 위하여 사용.
+    properties:
+      hibernate:
+        show-sql: true  # 모든 쿼리문 보기
+        format_sql: true  # 쿼리문 정렬
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
